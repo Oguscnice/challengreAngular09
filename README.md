@@ -11,4 +11,6 @@ Critères de validation
 ✅Le formulaire m'indique si j'ai bien tout rempli et je ne peux pas ajouter de chaton si le formulaire n'est pas valide.
 
 
-![GIFduRepo](https://www.webmobilefirst.com/screencasts/6uTm6IN63v/)
+Copiez / Collez pour voir le GIF du REPO ==> https://www.webmobilefirst.com/screencasts/6uTm6IN63v/
+
+![gif](https://www.webmobilefirst.com/screencasts/6uTm6IN63v/)
