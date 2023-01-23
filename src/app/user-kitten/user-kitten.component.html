@@ -1,0 +1,13 @@
+<div>
+  <app-list-kitten (newCatToAdopted)="newCatAdopted2($event)"></app-list-kitten>
+  <div class="catList">
+    <h1>CatAdopted</h1>
+    <div *ngFor="let catA of catAdopted" class="pRace" ngClass="'pRaceHover'">
+      <p >
+        Race : {{ catA.race }} / Name : {{ catA.name }} / Birth :
+        {{ catA.birth | date }}
+      </p>
+      <img class="pPhoto" src="{{ catA.imgcat }}" alt="" />
+    </div>
+  </div>
+</div>

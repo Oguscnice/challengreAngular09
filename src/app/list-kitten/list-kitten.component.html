@@ -1,0 +1,23 @@
+<div class="listKitten">
+  <app-create-kitten (newCatToSend)="newCatToAdopt($event)"></app-create-kitten>
+  <div>
+  <h3>list kitten to adopt !</h3>
+  <div class="allList" *ngFor="let cat of allCats">
+
+    <div class="catList">
+      <button (click)="newCatAdopted(cat)">ADOPT</button>
+      <p *ngIf="cat.survol" class="pRace" ngClass="'pRaceHover'">
+        Race : {{ cat.race }} / Name : {{ cat.name }} / Birth :
+        {{ cat.birth | date }}
+      </p>
+      <img
+        class="pPhoto"
+        src="{{ cat.imgcat }}"
+        alt=""
+        (mouseover)="afficheP(cat)"
+        (mouseleave)="afficheP(cat)"
+      />
+    </div>
+  </div>
+  </div>
+</div>

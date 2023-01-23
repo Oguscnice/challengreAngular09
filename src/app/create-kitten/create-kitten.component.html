@@ -1,0 +1,92 @@
+<h2>create a kitten</h2>
+
+<form #myForm="ngForm">
+  <fieldset>
+    <label for="cat-race">Race</label>
+    <input
+      id="cat-race"
+      name="cat-race"
+      type="text"
+      [(ngModel)]="cat.race"
+      #race="ngModel"
+      required
+    />
+  </fieldset>
+
+  <!-- Message d'erreurs race -->
+  <div *ngIf="race.errors">
+    <span *ngIf="race.errors?.['required']">La race est obligatoire</span>
+  </div>
+
+  <fieldset>
+    <label for="cat-name">Name</label>
+    <input
+      id="cat-name"
+      name="cat-name"
+      type="text"
+      [(ngModel)]="cat.name"
+      #name="ngModel"
+      required
+    />
+  </fieldset>
+
+  <!-- Message d'erreurs name -->
+  <div *ngIf="name.errors">
+    <span *ngIf="name.errors?.['required']">Le name est obligatoire</span>
+  </div>
+
+  <fieldset>
+    <label for="cat-birth">Birth Date</label>
+    <input
+      id="cat-birth"
+      name="cat-birth"
+      type="date"
+      [(ngModel)]="cat.birth"
+      #birth="ngModel"
+      required
+      Date
+    />
+  </fieldset>
+
+  <!-- Message d'erreurs birth -->
+  <div *ngIf="birth.errors">
+    <span *ngIf="birth.errors?.['required']"
+      >La date de naissance est obligatoire</span
+    >
+  </div>
+
+  <fieldset>
+    <label for="cat-picture">Photo</label>
+    <input
+      placeholder="CatImgTest"
+      id="cat-picture"
+      name="cat-picture"
+      type="text"
+      [(ngModel)]="cat.imgcat"
+      #picture="ngModel"
+      required
+    />
+  </fieldset>
+
+  <!-- Message d'erreurs picture -->
+  <div *ngIf="picture.errors">
+    <span *ngIf="picture.errors?.['required']"
+      >L'URL de la photo est obligatoire</span
+    >
+  </div>
+</form>
+<button
+  (click)="onSubmit()"
+  [ngClass]="{
+    greenButton:
+      !race.errors && !name.errors && !picture.errors && !birth.errors
+  }"
+>
+  CREATE
+</button>
+<p>if you need URL for try photo :</p>
+<p>https://i.ytimg.com/vi/x01hyEA6TPQ/maxresdefault.jpg</p>
+<p>https://wikibio.in/wp-content/uploads/2021/12/Hasbulla-with-a-cat.jpg</p>
+<p>
+  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVD9JRWRq5XSEmLd8flmej24xg7rvhJ9LIA&usqp=CAU
+</p>
