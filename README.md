@@ -13,4 +13,4 @@ Critères de validation
 
 Copiez / Collez pour voir le GIF du REPO ==> https://www.webmobilefirst.com/screencasts/6uTm6IN63v/
 
-![gif](https://www.webmobilefirst.com/screencasts/6uTm6IN63v/)
+![gif](https://webmobilefirst-screencasts.s3.eu-west-3.amazonaws.com/6uTm6IN63v.gif)
