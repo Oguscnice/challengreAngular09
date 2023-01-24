@@ -10,5 +10,4 @@ Critères de validation
 ✅Quand je clique sur l'adoption d'un chaton, je l'adopte, il est dans ma liste, il n'est plus dans la liste des chatons disponibles.
 ✅Le formulaire m'indique si j'ai bien tout rempli et je ne peux pas ajouter de chaton si le formulaire n'est pas valide.
 
-
-Copiez / Collez pour voir le GIF du REPO ==> https://www.webmobilefirst.com/screencasts/6uTm6IN63v/
+Copiez / Collez pour voir le GIF du REPO ==> ![gif](./src/assets/mobile.gif)
